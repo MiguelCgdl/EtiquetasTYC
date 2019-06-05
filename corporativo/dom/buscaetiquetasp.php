@@ -2,11 +2,11 @@
   <!DOCTYPE html>
   <html lang="zxx" class="no-js">
   <head>
-    <link rel="shortcut icon" href="../img/fav.ico" />
+    <link rel="shortcut icon" href="../img/favicon_tyc.png" />
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Author Meta -->
-    <meta name="author" content="colorlib">
+    <meta name="author" content="GRUPOTYC">
     <!-- Meta Description -->
     <meta name="description" content="">
     <!-- Meta Keyword -->
@@ -15,8 +15,6 @@
     <meta charset="UTF-8">
     <!-- Site Title -->
     <title>Grupo T&C</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
       <!--
       CSS
       ============================================= -->
@@ -40,120 +38,14 @@
         <div class="container main-menu">
           <div class="row align-items-center justify-content-between d-flex">
               <div id="logo">
-                <a href="../index.php"><img src="../img/logo_55x155.png" alt="" title="" /></a>
+                <a href="../index.html"><img src="../img/logo_55x155.png" alt="" title="" /></a>
               </div>
               <nav id="nav-menu-container">
                 <ul class="nav-menu">
 
-                  <!-- Menu Ventas -->
-                   <li class="menu-has-children"><a href="">Operaciones</a>
-                    <ul>
-                        <li class="menu-has-children"><a href="">Almacen</a>
-                        <ul>
-                          <li><a href="">Formatos</a>
-                                       <ul>
-                              <li><a href="#" id="etiquetas">Etiquetas</a></li> 
-                                                        
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li class="menu-has-children"><a href="">Ventas</a>
-                        <ul>
-                           <li><a href="http://info.matriz.tyc/corporativo/manuales.php" >Manuales</a></li>
-                        </ul>
-                      </li>                             
-                    </ul>
-                  </li> 
-
-                  <!-- Menu Administracion -->
-                  <li class="menu-has-children"><a href="">Administracion</a>
-                    <ul>
-                        
-                      <li class="menu-has-children"><a href="">Cajas</a>
-                        <ul>
-                          <li><a href="#">Procesos</a>
-                            <ul>
-                              <li><a id="cajaprocesor1" href="#">R1</a></li>  
-                              <li><a id="cajaprocesod" href="#">Decisiones</a></li>                         
-                            </ul>
-
-                          </li>
-                          <li><a href="#">Formatos</a>
-                            <ul>
-                              <li><a href="docs/vale.pdf" target="_blank">Vales</a></li>  
-                              <li><a href="docs/deposito.pdf" target="_blank">Depositos</a></li>  
-                              <li><a href="docs/entregadecorte.pdf" target="_blank">Entrega de corte</a></li>                       
-                            </ul>
-                          </li>
-                        </ul>
-                      </li> 
-
-                      <li><a href="#">Contabilidad</a></li>
-
-                        <li class="menu-has-children"><a href="">Credito</a>
-                        <ul>
-                          <li><a href="#">Procesos</a>
-                            <ul>
-                                
-                              <li><a id="pagolinea" href="#">Pago en Linea</a></li>                         
-                            </ul>
-
-                          </li>
-                          <li><a href="#">Formatos</a>
-                            <ul>
-                              <li><a href="http://centrodedistribucion.net/images/SOLICITUD-DE-CREDITO-Y-FIRMAS-AUTORIZADAS-NUEVOS-CLIENTES.pdf" target="_blank">Solicitud de Credito</a></li>  
-                                                      
-                            </ul>
-                          </li>
-                        </ul>
-                      </li> 
-                      <li><a href="#">Tesoreria</a></li>                            
-                    </ul>
-                  </li>
-
-                          <!-- Menu DO -->
-                   <li class="menu-has-children"><a href="">DO</a>
-                    <ul>
-                      <li><a href="#">Convenios</a></li>
-                      <li class="menu-has-children"><a href="">Eventos</a>
-                        <ul>
-                          <li><a href="#">Capacitaciones</a></li>
-                          <li><a href="#">Cumpleaños</a></li>
-                        </ul>
-                      </li> 
-                       <li class="menu-has-children"><a href="">Formatos</a>
-                        <ul>
-                          <li><a href="docs/Solicitud de Vacaciones.pdf" target="_blank">Vacaciones</a></li>
-                          <li><a href="docs/Solicitud de Permiso.pdf" target="_blank">Permisos</a></li>
-                        </ul>
-                      </li> 
-                       <li><a href="#">PyD</a></li>
-                        <li><a href="#" id="reglamento">Reglamento Interno</a></li>
-                       
-                        
-                     
-                                                  
-                    </ul>
-                  </li> 
-
-                  <!-- Menu Sistemas -->
-                  <li class="menu-has-children"><a href="">Sistemas</a>
-                    <ul>
-                        <li class="menu-has-children"><a href="">Tutoriales</a>
-                        <ul>
-                          <li><a href="#" id="revisionrapida">Revision Rapida</a></li>
-                          <li><a href="#" id="telefono">Borrar mensajes</a></li>
-                         </ul>
-                      </li>                             
-                    </ul>
-                  </li> 
-
-                  <!-- Menu Gerencia -->
-                  <li class="menu-has-children"><a href="">Gerencia</a> </li> 
-
-                  
+                  <!-- Menu Inicio -->
+                  <li class="menu-has-children"><a href="../index.html">INICIO</a> </li> 
+                 
                 </ul>
               </nav><!-- #nav-menu-container -->                      
           </div>
@@ -166,9 +58,9 @@
           <div class="row d-flex align-items-center justify-content-center">
             <div class="about-content col-lg-12">
               <h1 class="text-white">
-                Imprimir Etiquetas Pequeñas
+                Etiquetas Chicas
               </h1> 
-              <p class="text-white link-nav"><a href="index.html">Inicio </a>  <span class="lnr lnr-arrow-right"></span>  <a href="reglamento.html"> Imprimir Etiquetas</a></p>
+              <p class="text-white link-nav"><a href="../index.html">Inicio </a>  
             </div>  
           </div>
         </div>
@@ -295,7 +187,7 @@ if ($tamañot>1) {
 Entrada: <input type="text" name="entrada" value="<?php echo $entrada; ?>" readonly><br><br>
 Proveedor: <input type="text" name="proveedor" value="<?php echo $proveedor;  ?>" readonly><br><br>
 Factura: <input type="text" name="factura" value="<?php echo $factura;  ?>" readonly><br><br>
-Pedimento: <input type="text" name="pedimento" required><br><br><br>
+Pedimento: <input type="text" name="pedimento" optional><br><br><br>
 <input type="hidden" name="tamañot" value="<?php echo $tamañot;  ?>">
 
   <center><input type="submit" value="Vista Previa"></center>
@@ -391,7 +283,6 @@ echo "<br><h1>Entrada sin informacion</h1>";
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
       <script src="../js/popper.min.js"></script>
       <script src="../js/vendor/bootstrap.min.js"></script>      
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>   
       <script src="../js/jquery-ui.js"></script>
       <script src="../js/My_Query.js"></script>          
         <script src="../js/easing.min.js"></script>      

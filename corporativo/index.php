@@ -1,3 +1,4 @@
+				<!-- End banner Area -->		
 	<!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
@@ -39,11 +40,13 @@
 				<div class="container main-menu">
 					<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.html"><img src="img/logotipo_webtyc2017principal.png" alt="" title="" /></a>
+				        <a href="index.php"><img src="img/logotipo_webtyc2017principal.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li><a href="index.html">Home</a></li>		          		      		  
+				          <li><a href="index.html">INICIO</a></li>
+				          
+				          		      		  
 					</div>
 				</div>
 			</header><!-- #header -->
@@ -55,56 +58,36 @@
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								Impresión Etiquetas				
+								Impresion Etiquetas				
 							</h1>	
+							<p class="text-white link-nav"><a href="index.html">Inicio </a>  <span class="lnr lnr-arrow-right"></span></p>
 						</div>	
 					</div>
 				</div>
 			</section>
 			<!-- End banner Area -->		
 			
-		<section>
-						<!------- Boton Chico---->
-					
-						<a class="CHICAS" href="indexch.php">CHICAS</a>
-											
-							<style type="text/css">.CHICAS
-							
-								{
-									text-decoration: none; padding: 20px; font-weight: 500; font-size: 20px; 
-									color: #ffffff; background-color: #1883ba; border-radius: 6px; border: 3px solid #0016b0; position:absolute; left:550px; top:350px;
-								}
-				 					 .CHICAS:hover
-				 					 
-								{
-				  					color: #1883ba; background-color: #ffffff;
-								}
-							</style>
-					 <!--------- Boton Grande------->
-								
-						<a class="GRANDES" href="index.php">GRANDES</a>
-								<style type="text/css">.GRANDES
-								{
-									text-decoration: none; padding: 20px; font-weight: 500; font-size: 19px; 
-									color: #ffffff; background-color: #1883ba; border-radius: 6px; border: 3px solid #0016b0; position:absolute; left:750px; top:350px;
-								}
-				 					 
-				 					 .GRANDES:hover
-								{
-				  					color: #1883ba; background-color: #ffffff;
-								}
-							</style>
-									
-			   				                    
-						</div>
-					</div>
 
+
+			<section>
+				<center> 
+					<form method="post" action="dom/busquedaproducto.php" >   
+                          
+                       <select name="options">
+                               <option value="entrada">Entrada</option>
+                               <option value="factura">Factura</option>
+                          </select>         
+                          <input type="number" id="name" name="name" requiered>
+                          <button type="submit" id="submit" class="button"  >Buscar</button>
+					
+					</form>
+									
 
 					<div  id="resultado">
 						
-		</section>		
-				
-			
+					</div>
+				</center> 
+			</section>
 			
 			
 			<!-- start footer Area --
@@ -116,10 +99,12 @@
 						</div>
 						<div class="col-lg-3 col-md-6 col-sm-12">
 							<div class="single-footer-widget">
-							
+								<h6>Links</h6>
 								<div class="row">
 									<div class="col">
-										
+										<ul>
+											<li><a href="#">Inicio</a></li> 
+										</ul>
 									</div>						
 								</div>							
 							</div>
@@ -132,12 +117,12 @@
 					</div>
 				</div>
 			</footer>
-			End footer Area -->	
+			-- End footer Area -->	
 
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="js/popper.min.js"></script>
 			<script src="js/vendor/bootstrap.min.js"></script>			
-						<script src="js/jquery-ui.js"></script>					
+			<script src="js/jquery-ui.js"></script>					
   			<script src="js/easing.min.js"></script>			
 			<script src="js/hoverIntent.js"></script>
 			<script src="js/superfish.min.js"></script>	
