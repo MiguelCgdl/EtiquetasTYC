@@ -49,7 +49,7 @@ if (strlen($descrip) > 30) {
 	}
 $lineas=utf8_decode($_POST[''.$i.'linea']);
 	$linea=substr($descrip, $pespacio, strlen($descrip))." ".$_POST[''.$i.'linea'];
-    $descrip = substr($descrip, 0, $pespacio); 
+    //$descrip = substr($descrip, 0, $pespacio); 
 	
  
  } 
@@ -68,7 +68,7 @@ $pdf->SetFont('Helvetica','B', 50);
 $pdf->SetX(0);
 $pdf->Cell(0,1.2, $codigo, 0, 0);
 
-$pdf->SetFont('Helvetica','B', 18);
+$pdf->SetFont('Helvetica','B', 14);
 $pdf->SetXY(0.1, 1);
 $pdf->Rect(0.1, 1.1, 4.8, 0.5 , 'FD');
 $pdf->SetTextColor(255, 255, 255);

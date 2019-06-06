@@ -11,8 +11,8 @@ $tamanot=$_POST['tamanot'];
 
 
 
-$pdf = new FPDF('L','in',array(1.5,2.9));
-$pdf->SetMargins(0, 0.2 , 0); 
+$pdf = new FPDF('L','in',array(1.2,3.0));
+$pdf->SetMargins(0., 0., 0); 
 $pdf->SetAutoPageBreak(true,0);
 $pdf->SetTitle('Etiquetas Pequeñas',TRUE);
 $y = $pdf->GetY();
@@ -32,7 +32,7 @@ $origen=$_POST[''.$i.'origen'];
 $upc=$_POST[''.$i.'upc'];
 
 $descrip=$_POST[''.$i.'descrip'];
-$linea=$_POST[''.$i.'linea'];
+$linea=utf8_decode($_POST[''.$i.'linea']);
 
 
 if (strlen($descrip) > 30) {
@@ -49,7 +49,7 @@ if (strlen($descrip) > 30) {
 	}
 $lineas=$_POST[''.$i.'linea'];
 $linea=substr($descrip, $pespacio, strlen($descrip))." ".$_POST[''.$i.'linea'];
-$descrip = substr($descrip, 0, $pespacio); 
+//$descrip = substr($descrip, 0, $pespacio); 
 	 
  
  } 
@@ -57,34 +57,53 @@ $codigo = ''.str_replace(" ", "-", $codigo);
 barcode('codigos/'.$codigo.'.png',$codigo, 15, 'horizontal', 'Codabar', false);
 
 $pdf->AddPage();
-
-$pdf->SetFont('Helvetica','BU', 6);
-$pdf->Cell(2,0, 'Distribution Center', 0, 0);
-$pdf->SetFont('Helvetica','', 4);
-$pdf->Cell(0,0, 'Units Per Box:'.$upc, 0, 0);
+///////UNIDAD POR CAJA/////////
+$pdf->SetFont('Helvetica','BU', 5);
+$pdf->Cell(2.3,.2, 'Distribution Center', 0, 0);
+$pdf->SetFont('Helvetica','BU', 5);
+$pdf->Cell(.9,0.2, 'Unidad por Caja: '.$upc, 0, 0);
 $pdf->Ln();
 
-$pdf->SetFont('Helvetica','B', 30);
-$pdf->SetX(0);
-$pdf->Cell(0,0.8, $codigo, 0, 0);
+//Codigo etiqueta
 
-$pdf->SetFont('Helvetica','B', 7);
-$pdf->SetXY(0.1, 1);
-$pdf->Rect(0.05, 0.8, 2.8, 0.3 , 'FD');
+$pdf->SetFont('Helvetica','B', 20);
+$pdf->SetX(1);
+$pdf->Cell(1,0.3, $codigo, 0,0);
+
+//Descripcion
+
+$pdf->SetFont('Helvetica','B',5);
+$pdf->SetXY(0.01, 0.65);
+$pdf->Rect(0.038, 0.55, 2.93, 0.2 , 'FD');
 $pdf->SetTextColor(255, 255, 255);
 $pdf->Cell(0,0, utf8_decode($descrip), 0, 0);
 
-$pdf->Image('codigos/'.$codigo.'.png',0,1.2,0.9,0.25,'PNG');
+////////////CODEBAR////////////
+$pdf->Image('codigos/'.$codigo.'.png',0,.77,0.9,0.2,'PNG');
 
-
+//////////ORIGEN////////////////
 $pdf->SetFont('Helvetica','B', 10);
 $pdf->SetTextColor(0, 0, 0);
-$pdf->SetXY(1.95, 1.25);
-$pdf->Cell(0.5,0.2, 'Origen: '.' '.$origen, 0, 0);
+$pdf->SetXY(2, .8);
+$pdf->Cell(0.9,0.17, 'Origen: '.' '.$origen, 1, 0);
 
-$pdf->SetXY(0.85, 1.25);
-$pdf->SetFont('Helvetica','B',6);
-$pdf->Cell(0,0.2, 'Linea: '.$lineas, 0, 0);
+/////////////LINEA//////////////////
+
+$pdf->SetXY(0.9, .9);
+$pdf->SetFont('Helvetica','BU',6);
+$pdf->Cell(0,0.25, 'Linea: '.$lineas, 0, 0);
+
+
+//////////PEDIMIENTO//////////
+$pdf->SetXY(0.1, 1);
+$pdf->SetFont('Helvetica','B',5);
+$pdf->Cell(0,0.2, 'Pedimento: '.$Pedimento, 0, 0);
+
+//////////Proveedor/////////
+
+$pdf->SetXY(2.3, 1);
+$pdf->SetFont('Helvetica','B',5);
+$pdf->Cell(0,0.2, 'Proveedor: '.$Proveedor, 0, 0);
 
 
 	
