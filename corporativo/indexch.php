@@ -45,8 +45,7 @@
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
 				          <li><a href="index.html">INICIO</a></li>
-				          
-					</div>
+				      </div>
 				</div>
 			</header><!-- #header -->
 		  
@@ -55,7 +54,7 @@
 				<div class="overlay overlay-bg"></div>
 				<div class="container">				
 					<div class="row d-flex align-items-center justify-content-center">
-						<div class="about-content col-lg-12">
+						<div class="about-content col-lg-10">
 							<h1 class="text-white">
 								Impresión Etiquetas				
 							</h1>	
@@ -71,13 +70,52 @@
 			<section>
 				<center> 
 					<form method="post" action="dom/buscaetiquetasp.php" >   
+
+						<div>
+  								<select name="options"class="select">
+  								  <option value="">Escoja una:</option>
+  								  <option value="entrada">Entrada</option>
+  								  <option value="factura">Factura</option>
+  								 
+  								</select>
+								</div>
                           
-                       <select name="options">
+                      <!-- <select name="options" class="select" id="select">
+                       	<style>
+                          			.select {
+										   	padding: 5px;
+ 										}
+ 							
+
                                <option value="entrada">Entrada</option>
                                <option value="factura">Factura</option>
-                          </select>         
-                          <input type="number" id="name" name="name" requiered>
-                          <button type="submit" id="submit" class="button"  >Buscar</button>
+
+                        </select>  
+							</style>---->
+
+                          <input type="number" class="redondeado" id="name" name="name" requiered>
+                          	<style>
+                          			.redondeado {
+										   border-radius: 5px;
+										   padding: 5px;
+ 										}
+ 							</style>
+
+							<button type="submit" id="submit" class="button" >Buscar</button>
+							<style> 
+
+							.button { 
+
+									padding:4px;border-radius:8px; text-decoration: none; 
+										font-weight:500; font-size: 16px; color: #ffffff; background-color: #1883ba; border: 3px solid #0016b0; position:absolute;
+										}
+								.button:hover
+				 					 
+								{
+				  					color: #1883ba; background-color: #ffffff;
+								}
+		
+							</style>
 					
 					</form>
 									
